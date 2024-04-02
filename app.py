@@ -1,4 +1,3 @@
-
 from shiny import reactive, render
 from shiny.express import ui
 
@@ -145,7 +144,8 @@ with ui.card():
             y="temp",
             title="Temperature Readings with Regression Line",
             labels={"temp": "Temperature (°C)", "timestamp": "Time"},
-            color_discrete_sequence=["blue"] )
+            color="temp",
+            color_continuous_scale="IceFire" )
             
             # Linear regression - we need to get a list of the
             # Independent variable x values (time) and the
