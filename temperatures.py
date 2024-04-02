@@ -3,7 +3,7 @@ import numpy as np
 from datetime import datetime, timedelta
 
 class timeseries:
-    def __init__(self, init_size=10, noise_scale=0.1):
+    def __init__(self, init_value=25, init_size=10, noise_scale=0.1):
         self.noise_scale = noise_scale
         self.temps = np.cumsum(np.random.normal(size=init_size, scale=noise_scale))
 
